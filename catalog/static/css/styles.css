@@ -1,0 +1,66 @@
+.topnav {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: "#f2f2f2";
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav a:hover {
+    background-color: #000000;
+    color: black;
+}
+.topnav a.split {
+    float: right;
+    background-color: #e73430;
+    color: white;
+}
+
+.topnav a:visited { 
+text-decoration: none; 
+color: white; 
+}
+
+.pro-li { 
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.proyect { 
+    margin: 70px 200px;
+}
+
+.proyect a { 
+    padding: 0px 30px;
+    margin: 5px 0px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.proyect a:visited {
+    text-decoration: none; 
+    color: black; 
+    }
+
+.proyect a:hover {
+    
+    color: black;
+}
+
+.proyect h4 { 
+    margin: 10px 0px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Mis inversiones</h1>
+
+    {% if proyectinstance_list %}
+    <ul>
+
+      {% for proyectinst in proyectinstance_list %}
+      <li class="{% if proyectinst.proyect_participation_ended %}text-danger{% endif %}">
+        <a href="{% url 'my-investment' proyectinst.id %}">{{proyectinst.proyect.title}}</a> 
+        <h3>Fecha de unión al proyecto: {{ proyectinst.date_acquired }}</h3>
+        <h3>Inversión: {{ proyectinst.investment }}</h3>
+        <h3>Fecha de termino de unión al proyecto: {{ proyectinst.date_of_end_contract }}</h3>
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% else %}
+      <p>No tiene inversiones de momento.</p>
+    {% endif %}
+{% endblock %}
